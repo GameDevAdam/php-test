@@ -20,4 +20,10 @@ class DexController extends Controller
         ]);*/
         return view("app");
     }
+
+    public function show($id)
+    {
+        // Since GuzzleHttp library was not working, I decided to pass the id to the view
+        return view("show", ["id"=> $id]);
+    }
 }

@@ -43,11 +43,7 @@
             },
             selectPokemon(pokemon) {
                 console.log(pokemon)
-                axios.get(pokemon.pokemon_species.url)
-                    .then(response => {
-                        this.selectedPokemon = response.data
-                        console.log(this.selectedPokemon)
-                    })
+                window.location.href = '/pokemon/' + pokemon.entry_number
             }
         },
         watch: {
