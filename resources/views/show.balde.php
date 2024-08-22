@@ -18,11 +18,15 @@
             .then(response => response.json())
             .then(data => {
                 console.log(data);
+                document.getElementById("pokemon-image").src = data.sprites.front_default;
+                document.getElementById("pokemon-name").innerText = data.name;
             });
     </script>
 </head>
 <body>
     <input type="button" value="Back" onclick="window.history.back()">
     {{ $id }}
+    <h1 id="pokemon-name"></h1>
+    <img src="" alt="" id="pokemon-image">
 </body>
 </html>

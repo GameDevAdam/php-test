@@ -59,3 +59,8 @@
         }
     }
 </script>
+<style scoped>
+    tr{
+        cursor: pointer;
+    }
+</style>
